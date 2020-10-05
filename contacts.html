@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+
+    <header>
+        <a href="index.html">Главная</a>&nbsp;
+        <a href="contacts.html">Контакты</a>
+    </header>
+
+    <h2 class="contacts-h2">Contact Us</h2>
+    <p>Lorem</p>
+    <img src="./pic/car.jpeg" alt="машина">
+    <h4>г. Нигдегород, ул. Неизвестная д. 99</h4>
+    <p>Lorem</p>
+    <h4>Phone
+        <ol>
+            <li>8-800-888-88-88 </li>
+            <li>8-4512-23-56-89 </li>
+        </ol>
+        <h4>Online service</h4>
+        <ul>
+            <li><a href="https://thesite.ru">site url</a></li>
+            <li><a href="mailto:mail@mail.ru">our mail</a></li>
+        </ul>
+        <h4>Send us message</h4>
+        <form action="#">
+            <p> Full Name <input class="text-input" type="text" placeholder="Your full name" name="fullname"></p>
+            <p>Email <input class="text-input" type="email" name="email" id="email" placeholder="mail@mail.ru"></p>
+            <p><textarea class="text-input" name="message" id="message" cols="30" rows="5"></textarea></p>
+
+            <button class="form-button form-button-submit" type="submit">Send us</button>
+            <button class="form-button form-button-reset" type="reset">Reset input</button>
+        </form>
+    </h4>
+    <br>
+    <div class="map" id="wrapper-9cd199b9cc5410cd3b1ad21cab2e54d3">
+        <div id="map-9cd199b9cc5410cd3b1ad21cab2e54d3"></div>
+        <script>(function () {
+                var setting = { "height": 537, "width": 803, "zoom": 17, "queryString": "Şahinali, Niğde Otogarı, Niğde Merkez/Нигде, Турция", "place_id": "ChIJLzvyfd_nKRURpTFpMZ4B3P4", "satellite": false, "centerCoord": [37.972582736295564, 34.68113759044498], "cid": "0xfedc019e316931a5", "lang": "ru", "cityUrl": "/turkey/nigde-35888", "cityAnchorText": "Карта [CITY1], Центральная Анатолия, Турция", "id": "map-9cd199b9cc5410cd3b1ad21cab2e54d3", "embed_id": "273592" };
+                var d = document;
+                var s = d.createElement('script');
+                s.src = 'https://1map.com/js/script-for-user.js?embed_id=273592';
+                s.async = true;
+                s.onload = function (e) {
+                    window.OneMap.initMap(setting)
+                };
+                var to = d.getElementsByTagName('script')[0];
+                to.parentNode.insertBefore(s, to);
+            })();</script><a href="https://1map.com/ru/map-embed">1 Map</a>
+    </div>
+    <footer>
+        <!-- footer -->
+        <h3>Lorem ipsum dolor</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <hr>
+        <ul>
+            <li>г. Нигдегород, ул. Неизвестная д. 99</li>
+            <li>8-800-888-88-88</li>
+            <li>mail@mail.ru</li>
+        </ul>
+        <p>All right reserved &copy; 2020 </p>
+    </footer>
+
+</body>
+
+</html>

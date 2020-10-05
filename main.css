@@ -1,0 +1,229 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.show-border {
+  border-width: 1px;
+  border-style: solid;
+  border-color: black;
+}
+
+.container {
+  display: flex;
+  margin: 0 auto;
+  width: 1140px;
+  border-color: red;
+  font-family: "Roboto", "Helvetica Neue", Verdana, Helvetica, Arial, sans-serif;
+}
+
+.container-page-header {
+  flex-direction: column;
+  background-image: url(./pic/ins_bg.svg);
+  background-size: 549px;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+
+.page-header {
+  padding-top: 27px;
+  background: linear-gradient(
+    0deg,
+    #ebf3fb 8.84%,
+    rgba(152, 195, 232, 0) 31.12%
+  );
+}
+
+.sidebar {
+  display: flex;
+  justify-content: space-between;
+  min-height: 55px;
+  margin-bottom: 67px;
+  align-items: center;
+}
+
+/* custom checkbox */
+
+label.setting {
+  display: grid;
+  align-items: center;
+  cursor: pointer;
+
+  grid-template-areas: "col-1 col-2 col-3";
+  grid-gap: 10px;
+}
+
+label.setting .on {
+  color: rgba(0, 0, 0, 0.3);
+
+  grid-area: col-3;
+}
+
+label.setting .icon,
+input.switch {
+  cursor: pointer;
+
+  grid-area: col-2;
+  justify-self: center;
+}
+
+label.setting .off {
+  color: rgba(0, 0, 0, 0.6);
+
+  grid-area: col-1;
+  justify-self: flex-end;
+}
+
+input.switch:checked + .icon {
+  background: #316099;
+}
+
+input.switch:checked ~ .on {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+input.switch:checked ~ .off {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+input.switch {
+  display: none;
+  outline: none;
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+label.setting .icon {
+  position: relative;
+  width: 40px;
+  height: 24px;
+  outline: none;
+  border-radius: 12px;
+  background-color: rgba(0, 0, 0, 0.07);
+  box-shadow: inset 0 0 4px -2px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+label.setting .icon span {
+  position: absolute;
+  top: calc(50% - 13px);
+  left: 0;
+  width: 25.72px;
+  height: 25.72px;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.17);
+  content: "";
+  transition: all 0.2s ease-in-out;
+  transform: scale(0.7);
+}
+
+input.switch:checked {
+  background: #316099;
+}
+
+input.switch:checked + .icon span {
+  left: calc(100% - 25.732px);
+}
+
+input.switch:checked + .icon span:before {
+  background: #316099;
+}
+/* end custom checkbox */
+
+.ava {
+  width: 33px;
+  height: 38px;
+  /* background-image: url(./pic/ava.svg); */
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.promo {
+  padding-top: 40px;
+  padding-right: 50px;
+  padding-bottom: 162px;
+  max-width: 554px;
+}
+
+.promo-header {
+  margin-bottom: 32px;
+  max-width: 554px;
+  color: #1f3f68;
+  letter-spacing: 0.04em;
+  font-weight: 300;
+  font-size: 64px;
+  line-height: 1.25;
+}
+
+.promo-content {
+  max-width: 425px;
+  color: #1f3f68;
+  letter-spacing: 0.05em;
+  font-size: 16px;
+  line-height: 26px;
+  opacity: 0.6;
+}
+
+.portfolio {
+  padding-top: 48px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.portfolio-header {
+  width: 100%;
+  text-align: center;
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 46px;
+  letter-spacing: 0.05em;
+  color: #000000;
+  padding-top: 21px;
+  padding-bottom: 38px;
+}
+
+.card {
+  width: 358px;
+  box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
+  border-radius: 10px;
+  margin-top: 26px;
+  /* /* padding-left: 32px; */
+  /* padding-right: 32px;  */
+}
+
+.card-header {
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.05em;
+  padding-left: 32px;
+  padding-right: 32px;
+  color: #1f3f68;
+}
+
+.card-content {
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.05em;
+  color: #1f3f68;
+  opacity: 0.6;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.card-link {
+  padding-top: 28px;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.big-banner {
+  width: 100%;
+  height: 480px;
+}
