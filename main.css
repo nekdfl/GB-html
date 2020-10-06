@@ -9,11 +9,28 @@ body {
   font-family: "Roboto", "Helvetica Neue", Verdana, Helvetica, Arial, sans-serif;
 }
 
-.show-border {
+A:link {
+  text-decoration: none; /* Убирает подчеркивание для ссылок */
+  color: #5a98d0;
+}
+A:visited {
+  text-decoration: none;
+  color: #5a98d0;
+}
+A:active {
+  text-decoration: none;
+  color: #5a98d0;
+}
+A:hover {
+  text-decoration: none;
+  color: #5a98d0;
+}
+
+/* .show-border {
   border-width: 1px;
   border-style: solid;
   border-color: black;
-}
+} */
 
 .container {
   display: flex;
@@ -194,9 +211,13 @@ input.switch:checked + .icon span:before {
 
 .card {
   width: 358px;
+  height: 480px;
   box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
   border-radius: 10px;
   margin-top: 26px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 .card-image {
@@ -204,7 +225,6 @@ input.switch:checked + .icon span:before {
   margin: auto;
   width: 50%;
   flex-wrap: wrap;
-  justify-content: center;
 }
 
 .card-header {
@@ -230,6 +250,24 @@ input.switch:checked + .icon span:before {
   padding-top: 28px;
   padding-left: 32px;
   padding-right: 32px;
+  padding-bottom: 44px;
+
+  font-size: 14px;
+  line-height: 30px;
+  letter-spacing: 0.05em;
+  color: #5a98d0;
+  display: flex;
+}
+
+.arrow {
+  width: 15px;
+  height: 15px;
+  padding-top: 8px;
+  margin-left: 23px;
+  background-image: url(./pic/linkarrow.svg);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: right bottom;
 }
 
 .project-apps {
