@@ -10,7 +10,7 @@
   border-style: solid;
   border-color: black;
 }
-
+ 
 .container {
   display: flex;
   margin: 0 auto;
@@ -151,7 +151,7 @@ input.switch:checked + .icon span:before {
 
 .promo-header {
   margin-bottom: 32px;
-  max-width: 554px;
+  max-width: 510px;
   color: #1f3f68;
   letter-spacing: 0.04em;
   font-weight: 300;
@@ -296,12 +296,12 @@ input.switch:checked + .icon span:before {
 }
 
 .invite {
-  width: 488px;
+  width: 495px;
   height: 280px;
 }
 
 .invite-header {
-  width: 340.96px;
+  width: 340px;
   height: 92px;
   font-size: 36px;
   line-height: 46px;
@@ -342,4 +342,26 @@ input.switch:checked + .icon span:before {
 
 .footer {
   height: 253px;
+}
+
+.footer-p{
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
+}
+
+.footer-text{
+  width: 316.98px;
+  height: 48px;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
+}
+
+.footer-copyright{
+  width : 100%;
+  padding-bottom: 49;
 }
