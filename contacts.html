@@ -1,36 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Контакты</title>
-    <link rel="stylesheet" href="main.css">
-</head>
-
-<body>
-
-    <header>
-        <a href="index.html">Главная</a>&nbsp;
-        <a href="contacts.html">Контакты</a>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <header class="container temp-menu">
+      <a href="index.html">Главная</a>&nbsp;
+      <a href="contacts.html">Контакты</a>
     </header>
+    <div class="page-header">
+      <div class="container sidebar">
+        <div class="logo"></div>
+        <div class="ava">
+          <img src="./pic/ava.svg" alt="ava" />
+        </div>
+      </div>
+      <div class="contact-promo">
+        <div class="contact-promo2">
+          <h1 class="contact-promo-header">Contact Us</h1>
+          <p class="contact-promo-content">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </div>
+      </div>
+    </div>
 
-    <h2 class="contacts-h2">Contact Us</h2>
-    <p>Lorem</p>
-    <img src="./pic/car.jpeg" alt="машина">
-    <h4>г. Нигдегород, ул. Неизвестная д. 99</h4>
-    <p>Lorem</p>
-    <h4>Phone
-        <ol>
-            <li>8-800-888-88-88 </li>
-            <li>8-4512-23-56-89 </li>
-        </ol>
-        <h4>Online service</h4>
-        <ul>
-            <li><a href="https://thesite.ru">site url</a></li>
-            <li><a href="mailto:mail@mail.ru">our mail</a></li>
-        </ul>
-        <h4>Send us message</h4>
+    <div class="container page-content">
+      <div class="contact-data">
+          <h4>г. Нигдегород, ул. Неизвестная д. 99</h4>
+        <p>Lorem</p>
+        <h4>Phone
+            <ol>
+                <li>8-800-888-88-88 </li>
+                <li>8-4512-23-56-89 </li>
+            </ol></div>
+      <div class="contact-form">
+        <h4 class="contact-form-header">Send us message</h4>
         <form action="#">
             <p> Full Name <input class="text-input" type="text" placeholder="Your full name" name="fullname"></p>
             <p>Email <input class="text-input" type="email" name="email" id="email" placeholder="mail@mail.ru"></p>
@@ -39,36 +47,78 @@
             <button class="form-button form-button-submit" type="submit">Send us</button>
             <button class="form-button form-button-reset" type="reset">Reset input</button>
         </form>
-    </h4>
-    <br>
-    <div class="map" id="wrapper-9cd199b9cc5410cd3b1ad21cab2e54d3">
-        <div id="map-9cd199b9cc5410cd3b1ad21cab2e54d3"></div>
-        <script>(function () {
-                var setting = { "height": 537, "width": 803, "zoom": 17, "queryString": "Şahinali, Niğde Otogarı, Niğde Merkez/Нигде, Турция", "place_id": "ChIJLzvyfd_nKRURpTFpMZ4B3P4", "satellite": false, "centerCoord": [37.972582736295564, 34.68113759044498], "cid": "0xfedc019e316931a5", "lang": "ru", "cityUrl": "/turkey/nigde-35888", "cityAnchorText": "Карта [CITY1], Центральная Анатолия, Турция", "id": "map-9cd199b9cc5410cd3b1ad21cab2e54d3", "embed_id": "273592" };
-                var d = document;
-                var s = d.createElement('script');
-                s.src = 'https://1map.com/js/script-for-user.js?embed_id=273592';
-                s.async = true;
-                s.onload = function (e) {
-                    window.OneMap.initMap(setting)
-                };
-                var to = d.getElementsByTagName('script')[0];
-                to.parentNode.insertBefore(s, to);
-            })();</script><a href="https://1map.com/ru/map-embed">1 Map</a>
+      </div>
+      <div class="map-container show-border">
+        <div class="map" id="wrapper-9cd199b9cc5410cd3b1ad21cab2e54d3">
+          <div id="map-9cd199b9cc5410cd3b1ad21cab2e54d3"></div>
+          <script>
+            (function () {
+              var setting = {
+                height: 537,
+                width: 803,
+                zoom: 17,
+                queryString:
+                  "Şahinali, Niğde Otogarı, Niğde Merkez/Нигде, Турция",
+                place_id: "ChIJLzvyfd_nKRURpTFpMZ4B3P4",
+                satellite: false,
+                centerCoord: [37.972582736295564, 34.68113759044498],
+                cid: "0xfedc019e316931a5",
+                lang: "ru",
+                cityUrl: "/turkey/nigde-35888",
+                cityAnchorText: "Карта [CITY1], Центральная Анатолия, Турция",
+                id: "map-9cd199b9cc5410cd3b1ad21cab2e54d3",
+                embed_id: "273592",
+              };
+              var d = document;
+              var s = d.createElement("script");
+              s.src = "https://1map.com/js/script-for-user.js?embed_id=273592";
+              s.async = true;
+              s.onload = function (e) {
+                window.OneMap.initMap(setting);
+              };
+              var to = d.getElementsByTagName("script")[0];
+              to.parentNode.insertBefore(s, to);
+            })();
+          </script>
+          <a href="https://1map.com/ru/map-embed">1 Map</a>
+        </div>
+      </div>
     </div>
-    <footer>
-        <!-- footer -->
-        <h3>Lorem ipsum dolor</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        <hr>
-        <ul>
-            <li>г. Нигдегород, ул. Неизвестная д. 99</li>
-            <li>8-800-888-88-88</li>
-            <li>mail@mail.ru</li>
-        </ul>
-        <p>All right reserved &copy; 2020 </p>
-    </footer>
 
-</body>
+    <div class="page-footer">
+      <div class="container under-footer">
+        <div class="invite">
+          <p class="invite-header">Intersted to woek with our team?</p>
+          <p class="invite-text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam.
+          </p>
+        </div>
+        <div class="talk-button">
+          <p class="talk-button-text">Let’s Talk</p>
+        </div>
+      </div>
+      <hr />
+      <div class="container footer">
+        <div class="footer-card">
+          <div class="footer-p">A.</div>
+          <div class="footer-text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          </div>
+        </div>
+        <div class="footer-card">
+          <p class="footer-p">T.</p>
+          <p class="footer-text">+62-812-7313-4321</p>
+        </div>
+        <div class="footer-card">
+          <span class="footer-p">E.</span>
+          <p class="footer-text">hello.afrian@gmail.com</p>
+        </div>
+        <div class="footer-copyright">All rights reserved. &copy;</div>
+      </div>
+    </div>
+  </body>
 
+  
 </html>
