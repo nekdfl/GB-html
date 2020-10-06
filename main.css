@@ -5,18 +5,21 @@
   padding: 0;
 }
 
+body {
+  font-family: "Roboto", "Helvetica Neue", Verdana, Helvetica, Arial, sans-serif;
+}
+
 .show-border {
   border-width: 1px;
   border-style: solid;
   border-color: black;
 }
- 
+
 .container {
   display: flex;
   margin: 0 auto;
   width: 1140px;
   border-color: red;
-  font-family: "Roboto", "Helvetica Neue", Verdana, Helvetica, Arial, sans-serif;
 }
 
 .container-page-header {
@@ -170,6 +173,8 @@ input.switch:checked + .icon span:before {
 
 .portfolio {
   padding-top: 48px;
+  padding-bottom: 20px;
+  margin-bottom: 7px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -192,8 +197,14 @@ input.switch:checked + .icon span:before {
   box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
   border-radius: 10px;
   margin-top: 26px;
-  /* /* padding-left: 32px; */
-  /* padding-right: 32px;  */
+}
+
+.card-image {
+  display: flex;
+  margin: auto;
+  width: 50%;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .card-header {
@@ -221,24 +232,49 @@ input.switch:checked + .icon span:before {
   padding-right: 32px;
 }
 
+.project-apps {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-bottom: 112px;
+}
+
+.projects {
+  width: 100%;
+}
+.projects-header {
+  padding-top: 15px;
+  margin-bottom: 32px;
+  width: 100%;
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 46px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #000000;
+}
+
+.projects-text {
+  margin: 0 auto;
+  max-width: 750px;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #222222;
+  padding-bottom: 32px;
+}
+
 .big-banner {
   width: 100%;
   height: 480px;
-  background: linear-gradient(
-    89.99deg,
-    #1f3f68 3.62%,
-    rgba(31, 63, 104, 0.37) 97.78%
-  );
-}
-
-.big-banner-home-logo {
-  background-image: url(./pic/big-banner.svg);
-  background-size: 549px;
+  background-image: url(./pic/big-banner.png);
   background-repeat: no-repeat;
-  background-position: left bottom;
+  background-size: auto;
 }
 
-.big-banner-content {
+.big-banner-text {
   font-size: 32px;
   line-height: 46px;
   text-align: right;
@@ -248,38 +284,37 @@ input.switch:checked + .icon span:before {
   padding-right: 64px;
 }
 
-.project-apps {
-  flex-direction: column;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-.left-banner {
-  width: 554px;
-  height: 417px;
-  background: linear-gradient(
-    308.85deg,
-    rgba(66, 165, 245, 0.4) -1.71%,
-    rgba(21, 101, 192, 0.6) 74.54%
-  );
-  border-radius: 10px;
-  margin-top: 32px;
-  /* margin-right: 32px; */
-}
-
-.right-banner {
+.little-banner {
   width: 554px;
   height: 417px;
 
-  background: linear-gradient(
-    306.48deg,
-    rgba(66, 165, 245, 0.4) 0%,
-    rgba(21, 101, 192, 0.6) 97.81%
-  );
   border-radius: 10px;
   margin-top: 32px;
-  /* margin-left: 32px; */
+  padding-top: 32px;
+  /* padding-left: 32px; */
+}
+
+.little-banner-text {
+  padding-top: 32px;
+  padding-left: 32px;
+  position: absolute;
+
+  font-size: 28px;
+  line-height: 46px;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+}
+
+.little-banner-left {
+  background-image: url(./pic/left-banner.png);
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+.little-banner-right {
+  background-image: url(./pic/right-banner.png);
+  background-repeat: no-repeat;
+  background-size: auto;
 }
 
 .page-footer {
@@ -342,26 +377,44 @@ input.switch:checked + .icon span:before {
 
 .footer {
   height: 253px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
-.footer-p{
+.footer-card {
+  display: flex;
+  justify-content: space-between;
+  min-width: 359px;
+  padding-top: 51px;
+}
+
+.footer-p {
+  width: 23px;
   font-weight: 500;
   font-size: 16px;
   line-height: 26px;
   letter-spacing: 0.05em;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
-.footer-text{
-  width: 316.98px;
+.footer-text {
+  width: 317px;
   height: 48px;
+  font-weight: normal;
   font-size: 16px;
   line-height: 26px;
   letter-spacing: 0.05em;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
-.footer-copyright{
-  width : 100%;
-  padding-bottom: 49;
+.footer-copyright {
+  width: 100%;
+  padding-bottom: 49px;
+  padding-top: 49px;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+  opacity: 0.4;
 }
