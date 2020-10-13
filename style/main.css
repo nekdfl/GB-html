@@ -10,17 +10,21 @@ body {
 }
 
 A:link {
-  text-decoration: none; /* Убирает подчеркивание для ссылок */
+  text-decoration: none;
+  /* Убирает подчеркивание для ссылок */
   color: #5a98d0;
 }
+
 A:visited {
   text-decoration: none;
   color: #5a98d0;
 }
+
 A:active {
   text-decoration: none;
   color: #5a98d0;
 }
+
 A:hover {
   text-decoration: none;
   color: #5a98d0;
@@ -58,11 +62,9 @@ A:hover {
 
 .page-header {
   padding-top: 27px;
-  background: linear-gradient(
-    0deg,
-    #ebf3fb 8.84%,
-    rgba(152, 195, 232, 0) 31.12%
-  );
+  background: linear-gradient(0deg,
+      #ebf3fb 8.84%,
+      rgba(152, 195, 232, 0) 31.12%);
 }
 
 .sidebar {
@@ -208,6 +210,7 @@ A:hover {
 .projects {
   width: 100%;
 }
+
 .projects-header {
   padding-top: 15px;
   margin-bottom: 32px;
@@ -478,6 +481,7 @@ A:hover {
 .contactdata-list-list-phone {
   list-style-image: url(./pic/phone.png);
 }
+
 .contactdata-list-list-globo {
   list-style-image: url(./pic/globo.png);
 }
