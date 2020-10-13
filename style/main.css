@@ -5,10 +5,6 @@
   padding: 0;
 }
 
-body {
-  font-family: "Roboto", "Helvetica Neue", Verdana, Helvetica, Arial, sans-serif;
-}
-
 A:link {
   text-decoration: none;
   /* Убирает подчеркивание для ссылок */
@@ -28,6 +24,10 @@ A:active {
 A:hover {
   text-decoration: none;
   color: #5a98d0;
+}
+
+.page {
+  font-family: "Roboto", "Helvetica Neue", Verdana, Helvetica, Arial, sans-serif;
 }
 
 .show-border {
