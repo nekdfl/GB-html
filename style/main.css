@@ -28,6 +28,15 @@ A:hover {
 
 .page {
   font-family: "Roboto", "Helvetica Neue", Verdana, Helvetica, Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  min-height: 100vh;
+}
+
+.wrapper {
+  flex-grow: 1;
 }
 
 .show-border {
@@ -39,7 +48,7 @@ A:hover {
 .container {
   display: flex;
   margin: 0 auto;
-  width: 1140px;
+  max-width: 1140px;
   border-color: red;
 }
 
@@ -62,9 +71,11 @@ A:hover {
 
 .page-header {
   padding-top: 27px;
-  background: linear-gradient(0deg,
-      #ebf3fb 8.84%,
-      rgba(152, 195, 232, 0) 31.12%);
+  background: linear-gradient(
+    0deg,
+    #ebf3fb 8.84%,
+    rgba(152, 195, 232, 0) 31.12%
+  );
 }
 
 .sidebar {
@@ -127,7 +138,7 @@ A:hover {
 }
 
 .portfolio-header {
-  width: 100%;
+  /* width: 100%; */
   text-align: center;
   font-weight: 300;
   font-size: 36px;
@@ -135,11 +146,12 @@ A:hover {
   letter-spacing: 0.05em;
   color: #000000;
   padding-top: 21px;
+  padding-left: 32px;
   padding-bottom: 38px;
 }
 
 .card {
-  width: 358px;
+  max-width: 358px;
   height: 480px;
   box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
   border-radius: 10px;
@@ -208,13 +220,13 @@ A:hover {
 }
 
 .projects {
-  width: 100%;
+  max-width: 1140px;
 }
 
 .projects-header {
   padding-top: 15px;
   margin-bottom: 32px;
-  width: 100%;
+  /* width: 100%; */
   font-weight: 300;
   font-size: 36px;
   line-height: 46px;
@@ -235,7 +247,7 @@ A:hover {
 }
 
 .big-banner {
-  width: 100%;
+  max-width: 1140px;
   height: 480px;
   background-image: url(../pic/big-banner.png);
   background-repeat: no-repeat;
@@ -253,7 +265,7 @@ A:hover {
 }
 
 .little-banner {
-  width: 554px;
+  max-width: 554px;
   height: 417px;
 
   border-radius: 10px;
@@ -291,7 +303,7 @@ A:hover {
 
 .under-footer {
   height: 383px;
-  width: 1140px;
+  max-width: 1140px;
   /* padding-top: 58px;
   padding-bottom: 45px; */
   justify-content: space-between;
@@ -299,12 +311,12 @@ A:hover {
 }
 
 .invite {
-  width: 495px;
+  max-width: 495px;
   height: 280px;
 }
 
 .invite-header {
-  width: 340px;
+  max-width: 340px;
   height: 92px;
   font-size: 36px;
   line-height: 46px;
@@ -377,7 +389,7 @@ A:hover {
 }
 
 .footer-copyright {
-  width: 100%;
+  /* width: 100%; */
   padding-bottom: 49px;
   padding-top: 49px;
   font-size: 16px;
@@ -584,3 +596,24 @@ A:hover {
   margin-top: 96px;
   margin-bottom: 96px;
 }
+
+@media (max-width: 375px) {
+  .container-page-header {
+    background-image: none;
+    padding: 32px;
+  }
+
+  .portfolio {
+    flex-direction: column;
+  }
+
+  .project-apps {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .little-banner {
+    padding-left: 15px;
+    padding-right: 17px;
+  }
+} ;
