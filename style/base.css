@@ -1,0 +1,61 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+A:link {
+  text-decoration: none;
+  /* Убирает подчеркивание для ссылок */
+  color: #5a98d0;
+}
+
+A:visited {
+  text-decoration: none;
+  color: #5a98d0;
+}
+
+A:active {
+  text-decoration: none;
+  color: #5a98d0;
+}
+
+A:hover {
+  text-decoration: none;
+  color: #5a98d0;
+}
+
+.page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  min-height: 100vh;
+}
+
+.page .page_font {
+  font-family: "Roboto", "Helvetica Neue", Verdana, Helvetica, Arial, sans-serif;
+}
+
+.temp-menu {
+  padding-top: 20px;
+  max-width: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  font-style: normal;
+  font-weight: bold;
+}
+/*# sourceMappingURL=base.css.map */
