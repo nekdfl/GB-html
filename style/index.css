@@ -61,6 +61,7 @@ A:hover {
 
 .page__header {
   padding-top: 27px;
+  margin-bottom: 64px;
   background: -webkit-gradient(linear, left bottom, left top, color-stop(8.84%, #ebf3fb), color-stop(31.12%, rgba(152, 195, 232, 0)));
   background: linear-gradient(0deg, #ebf3fb 8.84%, rgba(152, 195, 232, 0) 31.12%);
 }
@@ -142,7 +143,6 @@ A:hover {
 }
 
 .portfolio {
-  padding-top: 48px;
   padding-bottom: 20px;
   margin-bottom: 7px;
   display: -webkit-box;
@@ -229,7 +229,7 @@ A:hover {
   display: flex;
 }
 
-.card .arrow {
+.card .card__arrow {
   width: 15px;
   height: 15px;
   padding-top: 8px;
@@ -253,11 +253,11 @@ A:hover {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding-bottom: 112px;
+  margin-bottom: 112px;
 }
 
 .project-apps .project-apps__text {
-  width: 100%;
+  max-width: 1140px;
 }
 
 .project-apps .project-apps__header {
@@ -289,7 +289,8 @@ A:hover {
   height: 480px;
   background-image: url(../pic/big-banner.png);
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: contain;
+  margin-bottom: 32px;
 }
 
 .project-apps .project-apps__big-banner-text {
@@ -306,7 +307,6 @@ A:hover {
   width: 554px;
   height: 417px;
   border-radius: 10px;
-  margin-top: 32px;
   padding-top: 32px;
   /* padding-left: 32px; */
 }
@@ -324,13 +324,13 @@ A:hover {
 .project-apps .project-apps__little-banner_left {
   background-image: url(../pic/left-banner.png);
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: contain;
 }
 
 .project-apps .project-apps__little-banner_right {
   background-image: url(../pic/right-banner.png);
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: contain;
 }
 
 .page-footer {
@@ -446,5 +446,181 @@ A:hover {
   letter-spacing: 0.05em;
   color: #ffffff;
   opacity: 0.4;
+}
+
+@media (max-width: 768px) {
+  .page__header {
+    padding-top: 19px;
+  }
+  .container {
+    max-width: 768px;
+  }
+  .container-page-header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-image: url(../pic/ins_bg.svg);
+    background-size: 45%;
+    padding-left: 32px;
+    margin-right: 32px;
+  }
+  .portfolio {
+    margin-bottom: 127px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .portfolio .portfolio__header {
+    max-width: 768px;
+    text-align: center;
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 46px;
+    letter-spacing: 0.05em;
+    color: #000000;
+    padding-top: 21px;
+    padding-left: 32px;
+    padding-bottom: 38px;
+  }
+  .card {
+    margin: 0 auto;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-bottom: 32px;
+    max-width: 358px;
+  }
+  .card .card__image {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: auto;
+    width: 50%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .card .card__header {
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.05em;
+    padding-left: 32px;
+    padding-right: 32px;
+    color: #1f3f68;
+  }
+  .card .card__content {
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.05em;
+    color: #1f3f68;
+    opacity: 0.6;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  .card .card__link {
+    padding-top: 28px;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-bottom: 44px;
+    font-size: 14px;
+    line-height: 30px;
+    letter-spacing: 0.05em;
+    color: #5a98d0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .project-apps {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-bottom: 109px;
+  }
+  .project-apps .project-apps__text {
+    max-width: 768px;
+  }
+  .project-apps .project-apps__header {
+    margin: 0 auto;
+    margin-bottom: 32px;
+    width: 100%;
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 46px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #000000;
+  }
+  .project-apps .project-apps__content {
+    margin: 0 auto;
+    font-weight: 400;
+    max-width: 750px;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #222222;
+    margin-bottom: 32px;
+    padding-left: 124px;
+    padding-right: 124px;
+  }
+  .project-apps .project-apps__big-banner {
+    max-width: 768px;
+    max-height: 296px;
+    background-image: url(../pic/big-banner.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .project-apps .project-apps__big-banner-text {
+    font-size: 32px;
+    line-height: 46px;
+    text-align: right;
+    letter-spacing: 0.05em;
+    color: #ffffff;
+    padding-top: 64px;
+    padding-right: 64px;
+  }
+  .project-apps .project-apps__little-banner {
+    max-width: 336px;
+    max-height: 253px;
+    border-radius: 10px;
+    padding-top: 32px;
+    /* padding-left: 32px; */
+  }
+  .project-apps .project-apps__little-banner-text {
+    padding-top: 32px;
+    padding-left: 32px;
+    position: absolute;
+    font-size: 28px;
+    line-height: 46px;
+    letter-spacing: 0.05em;
+    color: #ffffff;
+  }
+  .project-apps .project-apps__little-banner_left {
+    background-image: url(../pic/left-banner.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .project-apps .project-apps__little-banner_right {
+    background-image: url(../pic/right-banner.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
 }
 /*# sourceMappingURL=index.css.map */
