@@ -46,6 +46,15 @@ A:hover {
   font-family: "Roboto", "Helvetica Neue", Verdana, Helvetica, Arial, sans-serif;
 }
 
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  max-width: 1140px;
+  border-color: red;
+}
+
 .temp-menu {
   padding-top: 20px;
   max-width: 200px;
@@ -57,5 +66,35 @@ A:hover {
           justify-content: space-evenly;
   font-style: normal;
   font-weight: bold;
+}
+
+.sidebar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-height: 55px;
+  margin-bottom: 67px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sidebar .sidebar__logo {
+  background-image: url(../pic/logo.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 46px;
+  height: 48px;
+}
+
+.sidebar .sidebar__ava {
+  width: 33px;
+  height: 38px;
+  /* background-image: url(../pic/ava.svg); */
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 /*# sourceMappingURL=base.css.map */

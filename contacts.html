@@ -8,195 +8,186 @@
   </head>
 
   <body>
-    <div class="page">
-      <div class="wrapper">
-        <header class="container temp-menu">
-          <a href="index.html">Главная</a>&nbsp;
-          <a href="contacts.html">Контакты</a>
-        </header>
-        <div class="page-header page-header-contact">
-          <div class="container sidebar">
-            <div class="logo">
-              <a href="index.html"><img src="./pic/logo.png" alt="Главная" /></a
-              >&nbsp;
-            </div>
-            <div class="ava">
-              <a href="contacts.html"
-                ><img src="./pic/ava.svg" alt="контакты"
-              /></a>
-            </div>
-          </div>
+    <div class="page page_font">
+      <div class="container temp-menu">
+      <a href="index.html">Главная</a>&nbsp;
+      <a href="contacts.html">Контакты</a>
+    </div>
+    <div class="page-header-contact">
+      <div class="sidebar">
+        <div class="sidebar__logo">
+          <a href="index.html"><img src="./pic/logo.png" alt="Главная" /></a>
+        </div>
+        <div class="sidebar__ava">
+          <a href="contacts.html"
+            ><img src="./pic/ava.svg" alt="контакты" /></a>
+        </div>
+      </div>
 
-          <div class="contact-promo">
-            <h1 class="contact-promo-header">Contact Us</h1>
-            <p class="contact-promo-content">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
+      <div class="contact-promo">
+        <h1 class="contact-promo-header">Contact Us</h1>
+        <p class="contact-promo-content">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+      </div>
+    </div>
+    <div class="container page-content">
+      <div class="page-col page-col-left">
+        <img class="contact-logo" src="./pic/contact-logo.png" alt="" />
+        <div class="contact-data">
+          <h4 class="addr-header">ADDRESS</h4>
+          <div class="addr-p">
+            Id convallis placerat sit sed duis id amet volutpat quam a,
+            pharetra.
           </div>
         </div>
-        <div class="container page-content">
-          <div class="page-col page-col-left">
-            <img class="contact-logo" src="./pic/contact-logo.png" alt="" />
-            <div class="contact-data">
-              <h4 class="addr-header">ADDRESS</h4>
-              <div class="addr-p">
-                Id convallis placerat sit sed duis id amet volutpat quam a,
-                pharetra.
-              </div>
-            </div>
-            <div class="contact-data">
-              <h4 class="addr-header">PHONE</h4>
-              <ul>
-                <li
-                  class="contactdata-list-list-phone contactdata-list-marker contactdata-list-li"
-                >
-                  +62-812-7313-4321
-                </li>
-                <li
-                  class="contactdata-list-list-phone contactdata-list-marker contactdata-list-li"
-                >
-                  +62-817-000-1234
-                </li>
-              </ul>
-            </div>
-            <div class="contact-data">
-              <h4 class="addr-header">ONLINE SERVICE</h4>
-              <ul>
-                <li
-                  class="contactdata-list-list-globo contactdata-list-marker contactdata-list-li"
-                >
-                  www.afrianska.com
-                </li>
-                <li
-                  class="contactdata-list-list-mail contactdata-list-marker contactdata-list-li"
-                >
-                  hello.afrian@gmail.com
-                </li>
-              </ul>
-            </div>
+        <div class="contact-data">
+          <h4 class="addr-header">PHONE</h4>
+          <ul>
+            <li
+              class="contactdata-list-list-phone contactdata-list-marker contactdata-list-li"
+            >
+              +62-812-7313-4321
+            </li>
+            <li
+              class="contactdata-list-list-phone contactdata-list-marker contactdata-list-li"
+            >
+              +62-817-000-1234
+            </li>
+          </ul>
+        </div>
+        <div class="contact-data">
+          <h4 class="addr-header">ONLINE SERVICE</h4>
+          <ul>
+            <li
+              class="contactdata-list-list-globo contactdata-list-marker contactdata-list-li"
+            >
+              www.afrianska.com
+            </li>
+            <li
+              class="contactdata-list-list-mail contactdata-list-marker contactdata-list-li"
+            >
+              hello.afrian@gmail.com
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="page-col contact-form-col">
+        <h4 class="contact-form-header">SEND US MESSAGE</h4>
+        <form action="#">
+          <div class="contact-form-group">
+            <label class="contact-form-label" for="fullname">Full Name</label>
+            <input
+              class="contact-form-input"
+              type="text"
+              placeholder="Your Name"
+              name="fullname"
+              id="fullname"
+            />
+          </div>
+          <div class="contact-form-group">
+            <label class="contact-form-label" for="email">Email</label>
+            <input
+              class="contact-form-input"
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Your Email"
+            />
+          </div>
+          <div class="contact-form-group">
+            <label class="contact-form-label" for="message">Message</label>
+            <textarea
+              class="contact-form-input"
+              placeholder="Your Message"
+              name="message"
+              id="message"
+              cols="30"
+              rows="5"
+            ></textarea>
           </div>
 
-          <div class="page-col contact-form-col">
-            <h4 class="contact-form-header">SEND US MESSAGE</h4>
-            <form action="#">
-              <div class="contact-form-group">
-                <label class="contact-form-label" for="fullname"
-                  >Full Name</label
-                >
-                <input
-                  class="contact-form-input"
-                  type="text"
-                  placeholder="Your Name"
-                  name="fullname"
-                  id="fullname"
-                />
-              </div>
-              <div class="contact-form-group">
-                <label class="contact-form-label" for="email">Email</label>
-                <input
-                  class="contact-form-input"
-                  type="email"
-                  name="email"
-                  id="email"
-                  placeholder="Your Email"
-                />
-              </div>
-              <div class="contact-form-group">
-                <label class="contact-form-label" for="message">Message</label>
-                <textarea
-                  class="contact-form-input"
-                  placeholder="Your Message"
-                  name="message"
-                  id="message"
-                  cols="30"
-                  rows="5"
-                ></textarea>
-              </div>
+          <button class="contact-form-confirm-btn" type="submit">
+            <div class="contact-form-confirm-bnt-text">SUBMIT</div>
+          </button>
+          <!-- <button class="form-button form-button-reset" type="reset">
+            Reset input
+          </button> -->
+        </form>
+      </div>
 
-              <button class="contact-form-confirm-btn" type="submit">
-                <div class="contact-form-confirm-bnt-text">SUBMIT</div>
-              </button>
-              <!-- <button class="form-button form-button-reset" type="reset">
-              Reset input
-            </button> -->
-            </form>
-          </div>
+      <div class="map-container">
+        <div class="map" id="wrapper-9cd199b9cc5410cd3b1ad21cab2e54d3">
+          <div id="map-9cd199b9cc5410cd3b1ad21cab2e54d3"></div>
+          <script>
+            (function () {
+              var setting = {
+                height: 537,
+                width: 1140,
+                zoom: 17,
+                queryString:
+                  "Şahinali, Niğde Otogarı, Niğde Merkez/Нигде, Турция",
+                place_id: "ChIJLzvyfd_nKRURpTFpMZ4B3P4",
+                satellite: false,
+                centerCoord: [37.972582736295564, 34.68113759044498],
+                cid: "0xfedc019e316931a5",
+                lang: "ru",
+                cityUrl: "/turkey/nigde-35888",
+                cityAnchorText: "Карта [CITY1], Центральная Анатолия, Турция",
+                id: "map-9cd199b9cc5410cd3b1ad21cab2e54d3",
+                embed_id: "273592",
+              };
+              var d = document;
+              var s = d.createElement("script");
+              s.src = "https://1map.com/js/script-for-user.js?embed_id=273592";
+              s.async = true;
+              s.onload = function (e) {
+                window.OneMap.initMap(setting);
+              };
+              var to = d.getElementsByTagName("script")[0];
+              to.parentNode.insertBefore(s, to);
+            })();
+          </script>
+          <!-- <a href="https://1map.com/ru/map-embed">1 Map</a> -->
+        </div>
+      </div>
+    </div>
 
-          <div class="map-container">
-            <div class="map" id="wrapper-9cd199b9cc5410cd3b1ad21cab2e54d3">
-              <div id="map-9cd199b9cc5410cd3b1ad21cab2e54d3"></div>
-              <script>
-                (function () {
-                  var setting = {
-                    height: 537,
-                    width: 1140,
-                    zoom: 17,
-                    queryString:
-                      "Şahinali, Niğde Otogarı, Niğde Merkez/Нигде, Турция",
-                    place_id: "ChIJLzvyfd_nKRURpTFpMZ4B3P4",
-                    satellite: false,
-                    centerCoord: [37.972582736295564, 34.68113759044498],
-                    cid: "0xfedc019e316931a5",
-                    lang: "ru",
-                    cityUrl: "/turkey/nigde-35888",
-                    cityAnchorText:
-                      "Карта [CITY1], Центральная Анатолия, Турция",
-                    id: "map-9cd199b9cc5410cd3b1ad21cab2e54d3",
-                    embed_id: "273592",
-                  };
-                  var d = document;
-                  var s = d.createElement("script");
-                  s.src =
-                    "https://1map.com/js/script-for-user.js?embed_id=273592";
-                  s.async = true;
-                  s.onload = function (e) {
-                    window.OneMap.initMap(setting);
-                  };
-                  var to = d.getElementsByTagName("script")[0];
-                  to.parentNode.insertBefore(s, to);
-                })();
-              </script>
-              <!-- <a href="https://1map.com/ru/map-embed">1 Map</a> -->
-            </div>
+    <div class="page-footer">
+      <div class="container page-footer__top-footer">
+        <div class="page-footer__invite">
+          <p class="page-footer__invite-header">
+            Intersted to work with our team?
+          </p>
+          <p class="page-footer__invite-content">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam.
+          </p>
+        </div>
+        <div class="page-footer__talk-button">
+          <p class="page-footer__talk-button-caption">Let’s Talk</p>
+        </div>
+      </div>
+      <hr />
+      <div class="container footer-bot">
+        <div class="footer-card">
+          <div class="footer-card__p">A.</div>
+          <div class="footer-card__content">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
           </div>
         </div>
-
-        <div class="page-footer">
-          <div class="container page-footer__top-footer">
-            <div class="page-footer__invite">
-              <p class="page-footer__invite-header">
-                Intersted to work with our team?
-              </p>
-              <p class="page-footer__invite-content">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam.
-              </p>
-            </div>
-            <div class="page-footer__talk-button">
-              <p class="page-footer__talk-button-caption">Let’s Talk</p>
-            </div>
-          </div>
-          <hr />
-          <div class="container footer-bot">
-            <div class="footer-card">
-              <div class="footer-card__p">A.</div>
-              <div class="footer-card__content">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              </div>
-            </div>
-            <div class="footer-card">
-              <p class="footer-card__p">T.</p>
-              <p class="footer-card__content">+62-812-7313-4321</p>
-            </div>
-            <div class="footer-card">
-              <span class="footer-card__p">E.</span>
-              <p class="footer-card__content">hello.afrian@gmail.com</p>
-            </div>
-            <div class="footer-copyright">All rights reserved. &copy;</div>
-          </div>
+        <div class="footer-card">
+          <p class="footer-card__p">T.</p>
+          <p class="footer-card__content">+62-812-7313-4321</p>
         </div>
+        <div class="footer-card">
+          <span class="footer-card__p">E.</span>
+          <p class="footer-card__content">hello.afrian@gmail.com</p>
+        </div>
+        <div class="footer-copyright">All rights reserved. &copy;</div>
       </div>
     </div>
   </body>
